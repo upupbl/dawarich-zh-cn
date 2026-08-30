@@ -300,6 +300,51 @@ zh:
         open_dashboard: 打开面板
         disable: 禁用
         enable: 启用
+    integrations:
+      index:
+        services_nav: 集成服务
+        status_connected: 已连接
+        status_failed: 上次连接尝试失败
+        immich_photoprism_integrations: Immich 与 PhotoPrism 集成
+        upgrade_to_pro: 升级到 Pro
+        immich_integration: Immich 集成
+        immich_url: Immich URL
+        immich_api_key: Immich API 密钥
+        photoprism_integration: PhotoPrism 集成
+        photoprism_url: PhotoPrism URL
+        photoprism_api_key: PhotoPrism API 密钥
+        airtrail_integration: AirTrail 集成
+        airtrail_url: AirTrail URL
+        airtrail_api_key: AirTrail API 密钥
+        last_synced: "上次同步："
+        connected_accounts: 已连接账户
+        sync_airtrail_flights: 同步 AirTrail 航班
+        refresh_photo_cache: 刷新照片缓存
+        save_test_connection: 保存并测试连接
+        sync_now: 立即同步
+        settings: 设置
+    two_factor:
+      backup_codes:
+        save_your_backup_codes: 保存您的备用验证码
+        two_factor_authentication_enabled: 双因素认证已启用
+        done: 完成
+        backup_codes: 备用验证码
+      show:
+        fa_is_enabled: 已启用双因素认证
+        your_account_is_protected_with_two_factor_authentication: 您的账户已受双因素认证保护。
+        current_password: 当前密码
+        authenticator_code_or_backup_code: 验证器代码或备用验证码
+        fa_is_not_enabled: 尚未启用双因素认证
+        two_factor_authentication: 双因素认证
+        disable_2fa: 禁用双因素认证
+        enable_2fa: 启用双因素认证
+      verify:
+        scan_qr_code: 扫描二维码
+        can_t_scan_enter_the_code_manually: 无法扫描？请手动输入代码
+        verify_setup: 验证设置
+        set_up_two_factor_authentication: 设置双因素认证
+        verification_code: 验证码
+        verify_and_enable: 验证并启用
   stats:
     locked_year_card:
       available_on_pro: Pro 版可用
@@ -469,6 +514,19 @@ zh:
         log_in: 登录
         create_one_here: 在这里创建账号
         don_t_have_an_account_yet: 还没有账号？
+      otp_challenge:
+        two_factor_authentication: 双因素认证
+        authentication_code: 验证码
+        you_can_also_use_a_backup_code: 您也可以使用备用验证码。
+        verify: 验证
+        back_to_login: 返回登录
+    shared:
+      links:
+        log_in: 登录
+        register: 注册
+        forgot_your_password: 忘记密码？
+        didn_t_receive_confirmation_instructions: 没有收到确认邮件？
+        didn_t_receive_unlock_instructions: 没有收到解锁说明？
     passwords:
       new:
         forgot_your_password: 忘记密码？
@@ -492,15 +550,31 @@ zh:
         export_my_data: 导出我的数据
         danger_zone: 危险操作
         delete_my_account: 删除我的账户
-  settings:
-    general:
-      index:
-        general_settings: 常规设置
-        language: 语言
-        your_language: 您的语言
-        the_interface_emails_and_notifications_will_use_this_language: 界面、邮件和通知将使用此语言。
-        timezone: 时区
-        save_changes: 保存更改
+  exports:
+    table_row:
+      download_file: 下载文件
+      delete_export: 删除导出
+      are_you_sure: 确定吗？
+    index:
+      no_exports_yet: 暂无导出
+      go_to_points: 前往点位
+      actions: 操作
+      exports: 导出
+      points: 点位
+      name: 名称
+      status: 状态
+      created: 创建时间
+  families:
+    location_sharing_toggle:
+      live_location: "实时位置："
+      always: 始终
+      expires_in: 过期时间
+      location_history: "位置历史："
+      last_24_hours: 最近 24 小时
+      last_7_days: 最近 7 天
+      last_30_days: 最近 30 天
+      since_sharing_started: 从开始共享起
+      expires_in_time: "%{time} 后过期"
   activerecord:
     errors:
       models:
