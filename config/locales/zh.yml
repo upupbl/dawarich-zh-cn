@@ -1,0 +1,59 @@
+# Simplified Chinese locale. Missing keys intentionally fall back to English
+# while this community translation is being expanded.
+zh:
+  language_name: 简体中文
+  language_flag: cn
+  shared:
+    locale_suggestion:
+      message: "检测到您的浏览器偏好语言为简体中文。"
+      switch: "切换到简体中文"
+      dismiss: "关闭语言建议"
+  devise:
+    sessions:
+      new:
+        email: 邮箱
+        password: 密码
+        remember_me: 记住我
+        log_in: 登录
+        create_one_here: 在这里创建账号
+        don_t_have_an_account_yet: 还没有账号？
+    passwords:
+      new:
+        forgot_your_password: 忘记密码？
+        email: 邮箱
+        send_me_reset_password_instructions: 发送重置密码说明
+      edit:
+        change_your_password: 修改密码
+        new_password: 新密码
+        confirm_new_password: 确认新密码
+        change_my_password: 修改我的密码
+    registrations:
+      edit:
+        account_settings: 账户设置
+        profile: 个人资料
+        email: 邮箱
+        new_password: 新密码
+        password_confirmation: 确认密码
+        current_password: 当前密码
+        save_changes: 保存更改
+        import_your_data: 导入数据
+        export_my_data: 导出我的数据
+        danger_zone: 危险操作
+        delete_my_account: 删除我的账户
+  settings:
+    general:
+      index:
+        general_settings: 常规设置
+        language: 语言
+        your_language: 您的语言
+        the_interface_emails_and_notifications_will_use_this_language: 界面、邮件和通知将使用此语言。
+        timezone: 时区
+        save_changes: 保存更改
+  activerecord:
+    errors:
+      models:
+        service_setting:
+          host_required: "%{provider} 需要填写主机名。"
+          host_invalid: "主机名可包含端口或路径，但不能包含 http:// 前缀或空格。"
+          host_blocked: "此主机不可用：%{reason}"
+          api_key_required: "%{provider} 需要 API 密钥。"
