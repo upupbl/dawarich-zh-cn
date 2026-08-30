@@ -8,6 +8,177 @@ zh:
       message: "检测到您的浏览器偏好语言为简体中文。"
       switch: "切换到简体中文"
       dismiss: "关闭语言建议"
+  home:
+    index:
+      the_only_location_history_tracker_you_ll_ever_need: 您需要的唯一位置历史记录工具。
+      location_history_visualisation: 位置历史可视化
+      comprehensive_travel_statistics: 完整旅行统计
+      self_hosted_and_private: 自托管且私密
+      sign_up: 注册
+      sign_in: 登录
+      find_more_on: 更多信息请见
+      the_website: 网站
+      source_code: 源代码
+      on_github: GitHub。
+  layouts:
+    map:
+      you_re_viewing_demo_data: 您正在查看演示数据。
+      delete: 删除
+    shared:
+      try_dawarich_cloud: 试用 Dawarich Cloud
+      shared_with_dawarich: 由 Dawarich 分享
+      map_your_own_journeys: 在地图上呈现您的旅程。
+      see_how_it_works: 查看工作方式
+      open_source: 开源
+      self_hostable: 可自托管
+      managed_cloud_no_setup: 托管云服务，无需配置
+  imports:
+    form:
+      supported_import_formats: 支持的导入格式
+      file_format_is_automatically_detected_during_upload: 上传时会自动检测文件格式。
+      select_one_or_multiple_files: 选择一个或多个文件
+      files_will_be_uploaded_directly_to_storage_please_be_patient: 文件将直接上传到存储，请耐心等待。
+    import:
+      name: 名称
+      imported_points: 已导入点位
+      created_at: 创建时间
+      show_this_import: 查看此导入
+      edit_this_import: 编辑此导入
+    table_row:
+      already_imported: 已导入
+      deleting: 正在删除…
+      deletion_stalled: 删除已停滞
+      retry_deletion: 重试删除
+      are_you_sure: 确定吗？
+      view_on_map: 在地图中查看
+      view_points: 查看点位
+      download_file: 下载文件
+      delete_import: 删除导入
+    edit:
+      editing_import: 编辑导入
+      back_to_imports: 返回导入列表
+    index:
+      new_import: 新建导入
+      import_from_immich: 从 Immich 导入
+      import_from_photoprism: 从 PhotoPrism 导入
+      no_imports_yet: 暂无导入
+      create_your_first_import: 创建首个导入
+      actions: 操作
+      imports: 导入
+      are_you_sure: 确定吗？
+      name: 名称
+      points: 点位
+      status: 状态
+      created: 创建时间
+    new:
+      back_to_imports: 返回导入列表
+      new_import: 新建导入
+      supported_formats: 支持的格式
+      import_files: 导入文件
+    show:
+      edit_this_import: 编辑此导入
+      destroy_this_import: 删除此导入
+      back_to_imports: 返回导入列表
+      import: 导入
+  map:
+    onboarding_modal:
+      welcome_to_dawarich: 欢迎使用 Dawarich！
+      start_tracking_now: 立即开始追踪
+      minutes: 2 分钟
+      i_have_data: 我已有数据
+      explore_with_demo_data: 使用演示数据探索
+      skip_for_now: 暂时跳过
+      import_your_data: 导入您的数据
+      supported_formats: 支持的格式
+      file_format_is_automatically_detected_during_upload: 上传时会自动检测文件格式。
+      select_one_or_multiple_files: 选择一个或多个文件
+      start_tracking: 开始追踪
+      download_the_app: 下载应用
+      scan_qr_code_to_connect: 扫描二维码连接
+      settings: 设置
+      setup_guide: 配置指南
+      close: 关闭
+    maplibre:
+      area_creation_modal:
+        create_new_area: 新建区域
+        area_name: 区域名称 *
+        radius: 半径
+        meters: 米
+        cancel: 取消
+        radius_in_meters: 半径（米）
+        create_area: 创建区域
+        creating: 正在创建…
+      button_cluster:
+        map_controls: 地图控制
+        timeline: 时间线
+        layers: 图层
+        search: 搜索
+        create: 创建
+        replay: 回放
+        poster_studio: 海报工作室
+        video_studio: 视频工作室
+        settings: 设置
+        links: 链接
+      settings_panel:
+        close_panel: 关闭面板
+        layers: 图层
+        search_for_a_place: 搜索地点
+        enter_name_of_a_place: 输入地点名称
+        points: 点位
+        edit_points: 编辑点位
+        routes: 路线
+        tracks: 轨迹
+        flights: 航班
+        heatmap: 热力图
+        hexagons: 六边形网格
+        visits: 到访记录
+        places: 地点
+        photos: 照片
+        areas: 区域
+        fog_of_war: 探索迷雾
+        scratch_map: 刮刮地图
+        family_members: 家庭成员
+        appearance: 外观
+        map_style: 地图样式
+        light: 浅色
+        dark: 深色
+        white: 白色
+        black: 黑色
+        grayscale: 灰度
+  settings:
+    navigation:
+      general: 常规
+      integrations: 集成
+      map: 地图
+      visits: 到访记录
+      two_factor_authentication: 双因素认证
+      users: 用户
+      background_jobs: 后台任务
+    general:
+      index:
+        language: 语言
+        your_language: 您的语言
+        the_interface_emails_and_notifications_will_use_this_language: 界面、邮件和通知将使用此语言。
+        email_preferences: 邮件偏好
+        monthly_digest_emails: 每月摘要邮件
+        year_end_digest_emails: 年度摘要邮件
+        news_updates: 新闻与更新
+        timezone: 时区
+        your_timezone: 您的时区
+        general_settings: 常规设置
+        save_changes: 保存更改
+    background_jobs:
+      index:
+        start_reverse_geocoding: 开始反向地理编码
+        continue_reverse_geocoding: 继续反向地理编码
+        background_jobs_dashboard: 后台任务面板
+        visits_suggestions: 到访建议
+        background_jobs: 后台任务
+        start_job: 启动任务
+        are_you_sure: 确定吗？
+        open_dashboard: 打开面板
+        disable: 禁用
+        enable: 启用
   devise:
     sessions:
       new:
