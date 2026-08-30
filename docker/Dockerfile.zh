@@ -1,0 +1,6 @@
+# Lightweight production overlay for the official Dawarich image.
+# It preserves the upstream application and only adds the Chinese locale.
+FROM freikin/dawarich:latest
+
+COPY config/locales/zh.yml /var/app/config/locales/zh.yml
+COPY docker/zh_locale.rb /var/app/config/initializers/zh_locale.rb
