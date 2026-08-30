@@ -8,6 +8,127 @@ zh:
       message: "检测到您的浏览器偏好语言为简体中文。"
       switch: "切换到简体中文"
       dismiss: "关闭语言建议"
+    flash_message:
+      close: 关闭
+    studio_switcher:
+      studios: 工作室
+      poster: 海报
+      video: 视频
+    navbar:
+      family: 家庭
+      my_data: 我的数据
+      help: 帮助
+      get_started: 开始使用
+      finish_signup: 完成注册
+      trial_expired: 试用已到期
+      remaining: 剩余
+      map: 地图
+      trips: 旅行
+      stats: 统计
+      insights_sup_sup_html: 洞察<sup>α</sup>
+      family_sup_sup_html: 家庭<sup>α</sup>
+      points: 点位
+      places: 地点
+      imports: 导入
+      exports: 导出
+      tags: 标签
+      open_navigation_menu: 打开导航菜单
+      subscribe: 订阅
+      account: 账户
+      settings: 设置
+      subscription: 订阅
+      logout: 退出登录
+      see_all: 查看全部
+      login: 登录
+      register: 注册
+      theme_toggle:
+        dark_mode: 深色模式
+        light_mode: 浅色模式
+      days_remaining:
+        one: "剩余 %{count} 天"
+        other: "剩余 %{count} 天"
+    place_creation_modal:
+      create_new_place: 新建地点
+      place_name: 地点名称 *
+      note: 笔记
+      tags: 标签
+      suggested_places: 推荐地点
+      nearby_places: 附近地点
+      cancel: 取消
+      enter_place_name: 输入地点名称…
+      add_a_personal_note_about_this_place: 为此地点添加个人笔记…
+      create_place: 创建地点
+      saving: 正在保存…
+    replay_panel:
+      close_replay: 关闭回放
+      previous_day: 前一天
+      no_data_loaded: 未加载数据
+      next_day: 后一天
+      no_data: 无数据
+      play_pause: 播放/暂停
+      play_or_pause_replay: 播放或暂停回放
+      recenter_follow_marker: 居中并跟随标记
+      replay_speed: 回放速度
+      previous_point: 上一个点位
+      next_point: 下一个点位
+    sharing_link:
+      sharing_link: 分享链接
+      copy: 复制
+    sharing_modal:
+      sharing_settings: 分享设置
+      upgrade_to_pro: 升级到 Pro
+      enable_public_access: 启用公开访问
+      link_expiration: 链接过期时间
+      privacy_protection: 隐私保护
+      exact_coordinates_are_hidden: "• 精确坐标已隐藏"
+      personal_information_is_not_included: "• 不包含个人信息"
+      done: 完成
+    map:
+      date_navigation_v2:
+        share: 分享
+        start_date_and_time: 开始日期和时间
+        end_date_and_time: 结束日期和时间
+        search: 搜索
+        today: 今天
+        last_7_days: 最近 7 天
+        last_month: 上个月
+  shared_links:
+    expires_field:
+      expires_optional: 过期时间（可选）
+    modal:
+      anyone_with_the_link_will_be_able_to_view_this: 获得链接的任何人都可查看此内容。
+      close: 关闭
+    modal_active:
+      sharing: 正在分享
+      public: 公开
+      public_link: 公开链接
+      copy_link: 复制链接
+      copy_public_link: 复制公开链接
+      magic_phrase: 访问口令
+      copy_magic_phrase: 复制访问口令
+      last_viewed: 上次查看
+      ago: 前
+      not_viewed_yet: 尚未查看
+      regenerate_url: 重新生成 URL
+      regenerate_phrase: 重新生成口令
+      revoke: 撤销
+      open_in_new_tab: 在新标签页打开
+      view_count:
+        one: "%{count} 次查看"
+        other: "%{count} 次查看"
+    modal_timeline_create_form:
+      start_date: 开始日期
+      end_date: 结束日期
+      magic_phrase_optional: 访问口令（可选）
+      show_photos: 显示照片
+      cancel: 取消
+      create_share_link: 创建分享链接
+    modal_track_create_form:
+      magic_phrase_optional: 访问口令（可选）
+      show_photos: 显示照片
+      show_stats: 显示统计
+      cancel: 取消
+      create_share_link: 创建分享链接
   home:
     index:
       the_only_location_history_tracker_you_ll_ever_need: 您需要的唯一位置历史记录工具。
