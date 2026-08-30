@@ -179,6 +179,166 @@ zh:
         open_dashboard: 打开面板
         disable: 禁用
         enable: 启用
+  stats:
+    locked_year_card:
+      available_on_pro: Pro 版可用
+      upgrade_to_pro: 升级到 Pro
+    month:
+      monthly_digest: 月度摘要
+      share: 分享
+      distance_traveled: 行驶距离
+      active_days: 活跃天数
+      countries_visited: 到访国家
+      map_summary: 地图摘要
+      heatmap: 热力图
+      points: 点位
+      daily_activity: 每日活动
+      peak_day: "高峰日："
+      quietest_week: "• 最安静的一周："
+      countries_cities: 国家与城市
+      no_location_data_available_for_this_month: 本月暂无位置数据
+      cities_visited: "到访城市："
+      back_to: "← 返回"
+      day: 日期
+      distance: 距离
+      city_count:
+        one: "%{count} 个城市"
+        other: "%{count} 个城市"
+    stat:
+      total_distance: 总距离
+    year:
+      days: 天数
+      distance: 距离
+    index:
+      year_end_digests: 年终摘要
+      total_distance: 总距离
+      geopoints_tracked: 已追踪地理点
+      last_update: "上次更新："
+      countries_and_cities_visited_in: 到访的国家和城市
+      no_specific_cities_recorded: 没有记录具体城市
+      statistics: 统计
+      update_stats: 更新统计
+      days: 天数
+      distance: 距离
+      countries_count_countries_cities_count_cities: "%{countries_count} 个国家，%{cities_count} 个城市"
+    show:
+      statistics_for_year_year: "%{year} 年统计"
+  trips:
+    countries:
+      country_count:
+        one: "%{count} 个国家"
+        other: "%{count} 个国家"
+    distance:
+      calculating: 正在计算…
+    recalculate_button:
+      recalculating_hellip: 正在重新计算…
+      recalculate: 重新计算
+      recalculation_failed_try_again: 重新计算失败，请重试。
+    trip:
+      no_points_found: 未找到点位
+      calculating: 正在计算…
+      country_count:
+        one: "%{count} 个国家"
+        other: "%{count} 个国家"
+      day_count:
+        one: "%{count} 天"
+        other: "%{count} 天"
+    edit:
+      back_to_trips: 返回旅行列表
+      editing_trip: 编辑旅行
+      show_this_trip: 查看此旅行
+    index:
+      new_trip: 新建旅行
+      no_trips_yet: 暂无旅行
+      create_your_first_trip: 创建首个旅行
+      trips: 旅行
+    new:
+      back_to_trips: 返回旅行列表
+      new_trip: 新建旅行
+    notes:
+      empty:
+        add_note: "+ 添加笔记"
+        write_your_notes_for_this_day: 记录今天的旅行笔记…
+        save_note: 保存笔记
+        cancel: 取消
+      form:
+        write_your_notes_for_this_day: 记录今天的旅行笔记…
+        cancel: 取消
+        update_note: 更新笔记
+        save_note: 保存笔记
+      note:
+        edit: 编辑
+        cancel: 取消
+        delete: 删除
+        delete_this_note: 删除此笔记？
+        update_note: 更新笔记
+    show:
+      loading_route_data: 正在加载路线数据…
+      trip_path_is_being_calculated: 正在计算旅行路线…
+      download_trip: 下载旅行
+      currently_shared: 当前已分享
+      public: 公开
+      photos: 照片
+      flights: 航班
+      replay_the_trip: 回放旅行
+      replay: 回放
+      show_all_days: 显示所有日期
+      poster: 海报
+  visits:
+    buttons:
+      confirm: 确认
+      delete: 删除
+      delete_this_visit_your_location_points_stay: 删除此到访记录？位置点将被保留。
+  common:
+    not_available: 暂无
+    time_ago: "%{time} 前"
+    time_from_now: "%{time} 后"
+  transportation_modes:
+    unknown: 未知
+    stationary: 静止
+    walking: 步行
+    running: 跑步
+    cycling: 骑行
+    driving: 驾车
+    bus: 公交车
+    train: 火车
+    flying: 飞行
+    boat: 船只
+    motorcycle: 摩托车
+  helpers:
+    application:
+      expired: 已过期
+      finish_signup: 完成注册
+      resume: 继续
+      subscribe: 订阅
+      pro_preview: Pro 版可用，点击预览
+      pro_only: Pro 版可用
+    timeline:
+      unnamed: 未命名
+    datetime_formatting:
+      expires_on: "%{date} 到期"
+    insights:
+      monthly_digest: 月度摘要
+      minute_count:
+        one: "%{count} 分钟"
+        other: "%{count} 分钟"
+      day_count:
+        one: "%{count} 天"
+        other: "%{count} 天"
+      hour_count:
+        one: "%{count} 小时"
+        other: "%{count} 小时"
+    stats:
+      countries_and_cities: "%{countries} 个国家，%{cities} 个城市"
+      distance: "%{value} %{unit}"
+    imports:
+      extraction_status:
+        not_attempted: 未提取
+        pending: 排队中
+        running: 正在提取
+        completed: 已提取
+        failed: 失败
+        unsupported: 不可用
   devise:
     sessions:
       new:
