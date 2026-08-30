@@ -1313,6 +1313,11 @@ en:
       camera: Camera
       camera_overview: Whole route
       camera_follow: Follow the line
+      route_marker: Route marker
+      route_marker_dot: Location dot
+      route_marker_plane: Airplane
+      origin_label: Departure
+      destination_label: Arrival
       track_color: Route colour
       track_width: Route width
       units: Units

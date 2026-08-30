@@ -153,6 +153,26 @@
                 </select>
               </label>
               <label class="form-control">
+                <span class="label-text text-xs"><%= t('.route_marker') %></span>
+                <select class="select select-bordered select-sm py-0 w-full"
+                        data-setting="head_style" data-action="change->video-studio#updateSetting">
+                  <option value="dot"><%= t('.route_marker_dot') %></option>
+                  <option value="plane"><%= t('.route_marker_plane') %></option>
+                </select>
+              </label>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="form-control">
+                  <span class="label-text text-xs"><%= t('.origin_label') %></span>
+                  <input type="text" maxlength="48" class="input input-bordered input-sm w-full"
+                         data-setting="origin_label" data-action="input->video-studio#updateSetting">
+                </label>
+                <label class="form-control">
+                  <span class="label-text text-xs"><%= t('.destination_label') %></span>
+                  <input type="text" maxlength="48" class="input input-bordered input-sm w-full"
+                         data-setting="destination_label" data-action="input->video-studio#updateSetting">
+                </label>
+              </div>
+              <label class="form-control">
                 <span class="label-text text-xs"><%= t('.units') %></span>
                 <select class="select select-bordered select-sm py-0 w-full"
                         data-setting="units" data-action="change->video-studio#updateSetting">

@@ -37,6 +37,9 @@ export function defaultSettings() {
     format: "portrait",
     duration_sec: 15,
     camera_mode: "overview",
+    head_style: "dot",
+    origin_label: "",
+    destination_label: "",
     follow_zoom: 13.5,
     track_color: DAWARICH_BLUE,
     track_width: 120,
@@ -70,6 +73,9 @@ export function normalizeSettings(raw) {
       ? Math.min(MAX_DURATION_SEC, Math.max(MIN_DURATION_SEC, duration))
       : base.duration_sec,
     camera_mode: raw.camera_mode === "follow" ? "follow" : "overview",
+    head_style: raw.head_style === "plane" ? "plane" : "dot",
+    origin_label: typeof raw.origin_label === "string" ? raw.origin_label.slice(0, 48) : "",
+    destination_label: typeof raw.destination_label === "string" ? raw.destination_label.slice(0, 48) : "",
     follow_zoom: Number.isFinite(followZoom) ? followZoom : base.follow_zoom,
     track_color:
       typeof raw.track_color === "string" ? raw.track_color : base.track_color,

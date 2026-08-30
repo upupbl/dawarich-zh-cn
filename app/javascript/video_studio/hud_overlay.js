@@ -137,9 +137,19 @@ function replayChrome(ctx, opts) {
     fonts,
     labels,
     watermark,
+    routeTitle,
   } = opts
   const { MONO, SANS } = fonts
   const inset = u * 3.9
+
+  if (routeTitle) {
+    text(ctx, routeTitle, width - inset, inset, {
+      font: `700 ${u * SIZE.meta}px ${SANS}`,
+      color: INK(INK_PRIMARY),
+      align: "right",
+      baseline: "top",
+    })
+  }
 
   if (clock && playheadTs != null) {
     text(ctx, formatClockDate(playheadTs), inset, inset, {

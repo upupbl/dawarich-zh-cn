@@ -58,6 +58,30 @@ function headFC(head) {
   }
 }
 
+function drawPlaneMarker(ctx, map, head, previousHead, width, cssWidth) {
+  if (!head) return
+  const point = map.project(head)
+  const previous = previousHead ? map.project(previousHead) : point
+  const scale = width / cssWidth
+  const angle = Math.atan2(point.y - previous.y, point.x - previous.x)
+  const size = Math.max(18, width * 0.022)
+  ctx.save()
+  ctx.translate(point.x * scale, point.y * scale)
+  ctx.rotate(angle + Math.PI / 2)
+  ctx.fillStyle = "#ffffff"
+  ctx.strokeStyle = "rgba(10, 30, 50, 0.55)"
+  ctx.lineWidth = Math.max(2, size * 0.1)
+  ctx.beginPath()
+  ctx.moveTo(0, -size)
+  ctx.lineTo(size * 0.28, size * 0.72)
+  ctx.lineTo(0, size * 0.44)
+  ctx.lineTo(-size * 0.28, size * 0.72)
+  ctx.closePath()
+  ctx.fill()
+  ctx.stroke()
+  ctx.restore()
+}
+
 function styleForVideo(style, accent, dimOpacity) {
   const prepared = JSON.parse(JSON.stringify(style))
   prepared.sources[TRACK_SOURCE_ID].data = EMPTY_FC
@@ -149,6 +173,8 @@ export async function renderRouteVideo({
   fps = 30,
   durationSec,
   cameraMode = "overview",
+  headStyle = "dot",
+  routeTitle = "",
   followZoom = 13.5,
   accent = DAWARICH_BLUE,
   units = "km",
@@ -280,6 +306,10 @@ export async function renderRouteVideo({
       await nextIdle(map)
 
       ctx.drawImage(map.getCanvas(), 0, 0, width, height)
+      if (headStyle === "plane" && fraction < 1) {
+        const previousHead = sliceAtFraction(timeline, Math.max(0, fraction - 0.002)).head
+        drawPlaneMarker(ctx, map, slice.head, previousHead, width, cssWidth)
+      }
       drawHud(ctx, {
         width,
         height,
@@ -301,6 +331,7 @@ export async function renderRouteVideo({
         watermark,
         themeBg,
         hudScale,
+        routeTitle,
       })
 
       await encoder.addFrame(canvas, i)

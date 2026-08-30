@@ -88,7 +88,7 @@ RUN gem update --system 3.6.9 \
 
 WORKDIR $APP_PATH
 
-COPY ../Gemfile ../Gemfile.lock ../.ruby-version ../vendor ./
+COPY Gemfile Gemfile.lock .ruby-version vendor ./
 
 # Install production gems only
 RUN bundle config set --local path 'vendor/bundle' \
@@ -96,7 +96,7 @@ RUN bundle config set --local path 'vendor/bundle' \
     && bundle install --jobs 4 --retry 3 \
     && rm -rf vendor/bundle/ruby/3.4.0/cache/*.gem
 
-COPY ../. ./
+COPY . ./
 
 # Node deps (tailwind plugins like daisyui) are needed by assets:precompile.
 # Install them here so the build does not depend on a host-side `npm install`

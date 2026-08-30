@@ -425,6 +425,10 @@ export default class extends Controller {
         height,
         durationSec: this.settings.duration_sec,
         cameraMode: this.settings.camera_mode,
+        headStyle: this.settings.head_style,
+        routeTitle: [this.settings.origin_label, this.settings.destination_label]
+          .filter(Boolean)
+          .join(" → "),
         followZoom: this.settings.follow_zoom,
         accent: this.settings.track_color,
         units: this.settings.units,

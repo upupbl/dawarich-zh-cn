@@ -564,6 +564,40 @@ zh:
       name: 名称
       status: 状态
       created: 创建时间
+  route_videos:
+    studio:
+      video_studio: 视频工作室
+      close_studio: 关闭工作室
+      name: 名称
+      theme: 主题
+      route: 路线
+      playback: 回放
+      reset: 重置
+      format: 格式
+      format_portrait: 竖屏 · 9:16
+      format_landscape: 横屏 · 16:9
+      format_square: 方形 · 1:1
+      duration: 时长
+      camera: 镜头
+      camera_overview: 全路线
+      camera_follow: 跟随路线
+      route_marker: 路线标记
+      route_marker_dot: 位置圆点
+      route_marker_plane: 飞机
+      origin_label: 出发地
+      destination_label: 目的地
+      track_color: 路线颜色
+      track_width: 路线宽度
+      units: 单位
+      units_km: 千米
+      units_mi: 英里
+      hud_scale: 叠加层大小
+      watermark: 在视频中显示 dawarich.app
+      recent_videos: 最近视频
+      render_a_video: 渲染视频
+      cancel: 取消
+      save_to_gallery: 保存到图库
+      render_video: 渲染视频
   families:
     location_sharing_toggle:
       live_location: "实时位置："
