@@ -565,6 +565,8 @@ zh:
         white: 白色
         black: 黑色
         grayscale: 灰度
+    video:
+      empty_track: "此时间范围内没有可用于动画回放的路线。请选择至少包含两个点位的时间范围。"
   settings:
     navigation:
       general: 常规
