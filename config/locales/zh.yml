@@ -3,6 +3,305 @@
 zh:
   language_name: 简体中文
   language_flag: cn
+  activerecord: &zh_activerecord
+    errors:
+      models:
+        service_setting:
+          chibigeo_api_key_required: "ChibiGeo 需要 API 密钥。免费 Hobby 方案每天包含 2,500 次查询；请前往 chibigeo.com 获取密钥。"
+  auth:
+    account_links:
+      challenge:
+        link_provider_to_your_dawarich_account: 将 %{provider} 关联至您的 Dawarich 账户
+        existing_account_link_instructions_html: 我们找到了属于 %{email} 的 Dawarich 账户。请输入密码，以关联您的 %{provider} 身份并登录该账户。
+        link: 关联
+        to_your_dawarich_account: 至您的 Dawarich 账户
+        we_found_an_existing_dawarich_account_for: 我们找到了现有的 Dawarich 账户，账户邮箱为
+        enter_your_password_to_link_your: "。请输入密码以关联您的"
+        identity_to_that_account_and_sign_in: 身份并登录该账户。
+        current_password: 当前密码
+        or: 或
+        forgot_your_password: 忘记密码？
+        email_me_a_confirmation_link_instead: 改为向我发送确认链接
+        reset_it: 重置密码
+        go_back_to_sign_in: 返回登录
+        confirm_account_linking: 确认关联账户
+        link_provider_and_sign_in: 关联 %{provider} 并登录
+  devise: &zh_devise
+    confirmations:
+      new:
+        resend_confirmation: 重新发送确认邮件
+        enter_your_email_address_and_we_ll_resend_the_confirmation: 输入您的邮箱地址，我们将重新发送确认说明。
+        email: 邮箱
+        resend_confirmation_instructions: 重新发送确认说明
+    mailer:
+      confirmation_instructions:
+        welcome: 欢迎
+        you_can_confirm_your_account_email_through_the_link_below: "您可通过以下链接确认账户邮箱："
+        confirm_my_account: 确认我的账户
+      reset_password_instructions:
+        hello: 您好
+        someone_has_requested_a_link_to_change_your_password_you: 有人请求了修改您密码的链接。您可通过以下链接完成修改。
+        if_you_didn_t_request_this_please_ignore_this_email: 如果并非您本人请求，请忽略此邮件。
+        your_password_won_t_change_until_you_access_the_link: 在访问上方链接并创建新密码前，您的密码不会改变。
+        change_my_password: 修改我的密码
+      unlock_instructions:
+        hello: 您好
+        your_account_has_been_locked_due_to_an_excessive_number: 因登录失败次数过多，您的账户已被锁定。
+        click_the_link_below_to_unlock_your_account: "点击以下链接解锁您的账户："
+        unlock_my_account: 解锁我的账户
+    confirmations:
+      new:
+        resend_confirmation: 重新发送确认邮件
+        enter_your_email_address_and_we_ll_resend_the_confirmation: 输入您的邮箱地址，我们将重新发送确认说明。
+        email: 邮箱
+        resend_confirmation_instructions: 重新发送确认说明
+    mailer:
+      confirmation_instructions:
+        welcome: 欢迎
+        you_can_confirm_your_account_email_through_the_link_below: "您可通过以下链接确认账户邮箱："
+        confirm_my_account: 确认我的账户
+      email_changed:
+        hello: 您好
+        we_re_contacting_you_to_notify_you_that_your_email: 您的邮箱正在变更为以下地址，特此通知：
+        we_re_contacting_you_to_notify_you_that_your_email_2: 您的邮箱已变更为以下地址，特此通知：
+      password_change:
+        hello: 您好
+        we_re_contacting_you_to_notify_you_that_your_password: 您的密码已变更，特此通知。
+      reset_password_instructions:
+        hello: 您好
+        someone_has_requested_a_link_to_change_your_password_you: 有人请求了修改您密码的链接。您可通过以下链接完成修改。
+        if_you_didn_t_request_this_please_ignore_this_email: 如果并非您本人请求，请忽略此邮件。
+        your_password_won_t_change_until_you_access_the_link: 在访问上方链接并创建新密码前，您的密码不会改变。
+        change_my_password: 修改我的密码
+      unlock_instructions:
+        hello: 您好
+        your_account_has_been_locked_due_to_an_excessive_number: 因登录失败次数过多，您的账户已被锁定。
+        click_the_link_below_to_unlock_your_account: "点击以下链接解锁您的账户："
+        unlock_my_account: 解锁我的账户
+    passwords:
+      edit:
+        change_your_password: 修改密码
+        enter_your_new_password_below: 请在下方输入新密码。
+        new_password: 新密码
+        characters_minimum: 个字符以上）
+        confirm_new_password: 确认新密码
+        change_my_password: 修改我的密码
+      new:
+        forgot_your_password: 忘记密码？
+        enter_your_email_address_and_we_ll_send_you_instructions: 输入您的邮箱地址，我们将向您发送重置密码的说明。
+        email: 邮箱
+        send_me_reset_password_instructions: 发送重置密码说明
+    registrations:
+      api_key:
+        current_api_key: 当前 API 密钥
+        docs: "文档："
+        scan_with_dawarich_app: 使用 Dawarich 应用扫描
+        usage_examples: 使用示例
+        dawarich_ios_or_android_app: Dawarich iOS 或 Android 应用
+        provide_your_instance_url: "填写您的实例 URL："
+        and_provide_your_api_key: "并填写您的 API 密钥："
+        owntracks: OwnTracks
+        overland: Overland
+        api_documentation: API 文档
+        generate_new_api_key: 生成新的 API 密钥
+        are_you_sure_this_will_invalidate_the_current_api_key: 确定吗？这将使当前 API 密钥失效。
+      points_usage:
+        summary_html: 您已使用 %{used} 个点位，可用总数为 %{limit} 个。
+      edit:
+        account_settings: 账户设置
+        profile: 个人资料
+        update_your_email_address_and_password_from_one_place: 在此统一更新邮箱地址和密码。
+        connected_with: 已关联
+        email: 邮箱
+        currently_waiting_confirmation_for: "正在等待确认："
+        new_password: 新密码
+        leave_blank_to_keep_the_current_one: "（如不修改请留空）"
+        characters_minimum: 个字符以上）
+        password_confirmation: 确认密码
+        current_password: 当前密码
+        required_to_confirm_your_changes: "（需要输入以确认更改）"
+        import_your_data: 导入您的数据
+        upload_a_zip_file_containing_your_exported_dawarich_data_to: 上传包含已导出 Dawarich 数据的 ZIP 文件，以恢复点位、旅行和设置。
+        select_zip_archive: 选择 ZIP 压缩包
+        file_will_be_uploaded_directly_to_storage_please_be_patient: 文件将直接上传至存储空间，请耐心等待上传完成。
+        cancel: 取消
+        close: 关闭
+        trial_status: 试用状态
+        your_trial_period_ends_at: 您的试用期结束于
+        plan_usage: 方案用量
+        subscription: 订阅
+        your_signup_isn_t_complete_yet_finish_setting_up_your: 您尚未完成注册，请完成订阅设置以开始试用。
+        change_plan_update_your_payment_method_or_cancel_your_subscription: 可在管理中心更改方案、更新付款方式或取消订阅。
+        manage_your_subscription_change_plan_or_update_billing_on_manager: 可在管理中心管理订阅、更改方案或更新账单信息。
+        api_access: API 访问
+        use_your_api_key_for_clients_imports_and_external_integrations: 使用 API 密钥连接客户端、导入及外部集成。
+        data_tools: 数据工具
+        export_a_backup_or_restore_a_previous_archive: 导出备份或恢复之前的归档文件。
+        import_my_data: 导入我的数据
+        danger_zone: 危险操作
+        deleting_your_account_is_permanent_and_removes_all_your_data: 删除账户将永久移除您的全部数据。
+        cancel_my_account: 注销我的账户
+        delete_your_account: 删除账户
+        this_is_permanent_and_removes_all_your_data_this_cannot: 此操作不可逆，将永久删除您的全部数据。
+        this_is_permanent_and_removes_all_your_data_this_cannot_2: 此操作不可逆，将永久删除您的全部数据。我们将向您发送确认链接；仅在您点击该链接后才会删除账户。
+        type_your_email: 输入您的邮箱（
+        to_confirm: "）以确认"
+        enter_your_current_password_to_confirm: 输入当前密码以确认
+        save_changes: 保存更改
+        import_data: 导入数据
+        manage_subscription: 管理订阅
+        subscribe: 订阅
+        export_my_data: 导出我的数据
+        are_you_sure_you_want_to_export_your_data: 确定要导出您的数据吗？
+        account: 账户
+        importing: 正在导入…
+        delete_my_account: 删除我的账户
+        email_me_the_confirmation_link: 向我发送确认链接
+      new:
+        join_family: 加入 %{family}！
+        you_ve_been_invited_by: 您已受邀加入
+        to_join_their_family_create_your_account_to_accept_the: 的家庭。创建账户以接受邀请并开始分享位置数据。
+        almost_there: 即将完成！
+        only_a_few_steps_left_until_you_get_control_over: 再完成几步即可掌控您的位置数据！
+        create_your_account: 创建账户
+        configure_your_mobile_app: 配置移动应用
+        start_tracking_your_location_data_securely: 开始安全地追踪位置数据
+        ellipsis: "…"
+        you_re_beautiful: 一切就绪！
+        invitation_email_notice: 您的邮箱（%{email}）将用于此账户
+        email: 邮箱
+        password: 密码
+        characters_minimum: 至少 %{count} 个字符
+        password_confirmation: 确认密码
+        how_do_you_plan_to_use_dawarich: 您计划如何使用 Dawarich？
+        i_want_to_use_the_cloud_version: 我想使用云端版本
+        i_m_self_hosting_and_exploring_the_demo: 我正在自托管并体验演示版本
+        create_account_join_family: 创建账户并加入家庭
+        sign_up: 注册
+    sessions:
+      new:
+        sign_in_to_join_family: 登录以加入 %{family}！
+        you_ve_been_invited_by: 您已受邀加入
+        to_join_their_family_sign_in_to_your_account_to: 的家庭。登录您的账户以接受邀请。
+        don_t_have_an_account_yet: 还没有账户？
+        login_now: 立即登录
+        and_take_control_over_your_location_data: 并掌控您的位置数据。
+        email: 邮箱
+        password: 密码
+        remember_me: 记住我
+        sign_in_using_your_organization_s_identity_provider: 使用您组织的身份提供商登录
+        create_one_here: 在此创建账户
+        sign_in_accept_invitation: 登录并接受邀请
+        log_in: 登录
+      otp_challenge:
+        two_factor_authentication: 双因素认证
+        enter_the_6_digit_code_from_your_authenticator_app_to: 输入验证器应用中的 6 位验证码以继续。
+        enter_the_6_digit_code_from_your_authenticator_app_to: 输入验证器应用中的 6 位验证码以继续。
+        authentication_code: 验证码
+        you_can_also_use_a_backup_code: 您也可以使用备用验证码。
+        verify: 验证
+        back_to_login: 返回登录
+    shared:
+      links:
+        log_in: 登录
+        register: 注册
+        forgot_your_password: 忘记密码？
+        didn_t_receive_confirmation_instructions: 没有收到确认说明？
+        didn_t_receive_unlock_instructions: 没有收到解锁说明？
+    unlocks:
+      new:
+        resend_unlock_instructions: 重新发送解锁说明
+        enter_your_email_address_and_we_ll_send_you_instructions: 输入您的邮箱地址，我们将向您发送解锁账户的说明。
+        email: 邮箱
+  exports: &zh_exports
+    table_row:
+      middot: "·"
+      download_file: 下载文件
+      delete_export: 删除导出
+      are_you_sure: 确定吗？
+    index:
+      no_exports_yet: 暂无导出记录
+      exports_are_created_from_the: 导出可在
+      page_select_a_date_range_and_export_to_geojson_or: 页面创建。选择日期范围后，可导出为 GeoJSON 或 GPX。
+      go_to_points: 前往点位
+      actions: 操作
+      exports: 导出
+      points: 点位
+      name: 名称
+      status: 状态
+      created: 创建时间
+  families: &zh_families
+    location_sharing_toggle:
+      live_location: "实时位置："
+      always: 始终
+      hour: 1 小时
+      hours: 6 小时
+      hours_2: 12 小时
+      hours_3: 24 小时
+      expires_in: 过期时间
+      location_history: "位置历史："
+      last_24_hours: 最近 24 小时
+      last_7_days: 最近 7 天
+      last_30_days: 最近 30 天
+      since_sharing_started: 从开始共享起
+      a_separate_setting_from_live_location_when_on_family_can: 此设置与实时位置独立。开启后，家庭成员可在新版地图（v2）查看您的近期轨迹，而不仅是当前位置。仅会共享您开启此功能之后记录的点位。
+      expires_in_time: 于 %{time} 后过期
+    edit:
+      delete_family: 删除家庭
+      are_you_sure_you_want_to_delete_this_family_this: 确定要删除此家庭吗？此操作无法撤销。
+      back_to_family: "← 返回家庭"
+      members: 成员
+      cancel: 取消
+      editing_family: 编辑家庭
+      member_count:
+        one: "%{count} 位成员"
+        other: "%{count} 位成员"
+      back: "← 返回家庭"
+      created_on: 创建于
+      creator: 创建者
+      error_title: "提交时出现以下问题："
+      family_info: 家庭信息
+      last_updated: 上次更新
+      members_count: 成员数
+      name_help: 选择一个所有家庭成员都能识别的名称。
+      save_changes: 保存更改
+      title: 编辑家庭
+    index:
+      have_an_invitation: 有邀请？
+      if_someone_has_invited_you_to_join_their_family_you: 如果有人邀请您加入家庭，您应该会收到一封含邀请链接的邮件。
+      check_your_email_for_an_invitation_link_that_looks_like: "请在邮件中查找如下所示的邀请链接："
+      family_management: 家庭管理
+      create_family: 创建您的家庭
+      description: 创建或加入家庭，与亲人分享您的位置数据。
+      have_invitation: 有邀请？
+      invitation_help: "请在邮件中查找如下所示的邀请链接："
+      invitation_instructions: 如果有人邀请您加入家庭，您应该会收到一封含邀请链接的邮件。
+      title: 家庭管理
+    new:
+      choose_a_name_that_all_family_members_will_recognize_like: 选择一个所有家庭成员都能识别的名称，例如“张家”或“旅行小组”。
+      what_happens_next: 接下来会发生什么？
+      back: "← 返回"
+      new_family: 新建家庭
+      create_family: 创建家庭
+      description: 创建家庭，与亲人分享您的位置数据。
+      error_title: "提交时出现以下问题："
+      name_help: 选择一个所有家庭成员都能识别的名称，例如“张家”或“旅行小组”。
+      title: 创建家庭
+      upgrade_cta: 升级到家庭方案
+      upgrade_description: 创建家庭需要家庭方案。升级后可邀请最多 5 位成员，并共享完整访问权限。
+      upgrade_title: 需要家庭方案
+      what_happens_1: 您将成为家庭所有者
+      what_happens_2: 您可以邀请其他人加入家庭
+      what_happens_3: 家庭成员可查看共享的位置数据
+      what_happens_4: 您可以管理家庭设置和成员
+      what_happens_title: 接下来会发生什么？
+    navbar_indicator:
+      location_shared: 正在与家庭成员共享位置
+      location_not_shared: 未与家庭成员共享位置
+    form:
+      create: 创建家庭
+      name: 家庭名称
+      name_placeholder: 输入家庭名称
   shared:
     locale_suggestion:
       message: "检测到您的浏览器偏好语言为简体中文。"
@@ -550,13 +849,42 @@ zh:
         export_my_data: 导出我的数据
         danger_zone: 危险操作
         delete_my_account: 删除我的账户
+        update_your_email_address_and_password_from_one_place: 在此统一更新邮箱地址和密码。
+        connected_with: 已关联
+        currently_waiting_confirmation_for: "正在等待确认："
+        leave_blank_to_keep_the_current_one: "（如不修改请留空）"
+        characters_minimum: 个字符以上）
+        required_to_confirm_your_changes: "（需要输入以确认更改）"
+        upload_a_zip_file_containing_your_exported_dawarich_data_to: 上传包含已导出 Dawarich 数据的 ZIP 文件，以恢复点位、旅行和设置。
+        select_zip_archive: 选择 ZIP 压缩包
+        file_will_be_uploaded_directly_to_storage_please_be_patient: 文件将直接上传至存储空间，请耐心等待上传完成。
+        cancel: 取消
+        close: 关闭
+        api_access: API 访问
+        use_your_api_key_for_clients_imports_and_external_integrations: 使用 API 密钥连接客户端、导入及外部集成。
+        data_tools: 数据工具
+        export_a_backup_or_restore_a_previous_archive: 导出备份或恢复之前的归档文件。
+        import_my_data: 导入我的数据
+        this_is_permanent_and_removes_all_your_data_this_cannot: 此操作不可逆，将永久删除您的全部数据。
+        type_your_email: 输入您的邮箱（
+        to_confirm: "）以确认"
+        enter_your_current_password_to_confirm: 输入当前密码以确认
+        import_data: 导入数据
+        manage_subscription: 管理订阅
+        subscribe: 订阅
+        are_you_sure_you_want_to_export_your_data: 确定要导出您的数据吗？
+        importing: 正在导入…
+        email_me_the_confirmation_link: 向我发送确认链接
   exports:
     table_row:
+      middot: "·"
       download_file: 下载文件
       delete_export: 删除导出
       are_you_sure: 确定吗？
     index:
       no_exports_yet: 暂无导出
+      exports_are_created_from_the: 导出可在
+      page_select_a_date_range_and_export_to_geojson_or: 页面创建。选择日期范围后，可导出为 GeoJSON 或 GPX。
       go_to_points: 前往点位
       actions: 操作
       exports: 导出
@@ -602,12 +930,17 @@ zh:
     location_sharing_toggle:
       live_location: "实时位置："
       always: 始终
+      hour: 1 小时
+      hours: 6 小时
+      hours_2: 12 小时
+      hours_3: 24 小时
       expires_in: 过期时间
       location_history: "位置历史："
       last_24_hours: 最近 24 小时
       last_7_days: 最近 7 天
       last_30_days: 最近 30 天
       since_sharing_started: 从开始共享起
+      a_separate_setting_from_live_location_when_on_family_can: 此设置与实时位置独立。开启后，家庭成员可在新版地图查看您的近期轨迹，而不仅是当前位置。仅会共享开启后记录的点位。
       expires_in_time: "%{time} 后过期"
   activerecord:
     errors:
@@ -617,3 +950,9 @@ zh:
           host_invalid: "主机名可包含端口或路径，但不能包含 http:// 前缀或空格。"
           host_blocked: "此主机不可用：%{reason}"
           api_key_required: "%{provider} 需要 API 密钥。"
+  # Keep the expanded account, export, and family translations authoritative.
+  # Earlier sections in this community locale contain partial translations.
+  activerecord: *zh_activerecord
+  devise: *zh_devise
+  exports: *zh_exports
+  families: *zh_families
